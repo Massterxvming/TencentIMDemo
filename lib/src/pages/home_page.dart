@@ -452,6 +452,7 @@ class HomePageState extends State<HomePage> {
               children:
                   bottomNavigatorList(theme).map((res) => res.widget!).toList(),
             ),
+
             bottomNavigationBar: BottomNavigationBar(
               items: List.generate(
                 bottomNavigatorList(theme).length,

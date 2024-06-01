@@ -12,7 +12,6 @@ class CreateGroupIntroduction extends StatefulWidget {
   final ValueChanged<V2TimConversation>? directToChat;
   final VoidCallback? closeFunc;
   const CreateGroupIntroduction({Key? key, this.directToChat, this.closeFunc}) : super(key: key);
-
   static final groupTypeNameMap = {
     GroupType.Work: "好友工作群（Work）",
     GroupType.Public: "陌生人社交群（Public）",
@@ -48,7 +47,6 @@ class _CreateGroupIntroductionState extends State<CreateGroupIntroduction> {
   void createGroupFunc(GroupTypeForUIKit type) {
     final isWideScreen =
         TUIKitScreenUtils.getFormFactor(context) == DeviceType.Desktop;
-
     if (isWideScreen) {
       if(widget.closeFunc != null){
         widget.closeFunc!();
@@ -150,7 +148,6 @@ class _CreateGroupIntroductionState extends State<CreateGroupIntroduction> {
       ),
     );
   }
-
   @override
   Widget build(BuildContext context) {
     final theme = Provider.of<DefaultThemeData>(context).theme;

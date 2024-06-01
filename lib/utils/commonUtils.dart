@@ -8,7 +8,6 @@ class CommonUtils {
   static double adaptHeight(double height) {
     return height.h;
   }
-
   static TUIOfflinePushInfo convertTUIOfflinePushInfo(OfflinePushInfo offlinePush) {
     TUIOfflinePushInfo tuiOfflinePushInfo = TUIOfflinePushInfo();
     tuiOfflinePushInfo.title = offlinePush.title;
@@ -23,7 +22,6 @@ class CommonUtils {
   static double adaptWidth(double width) {
     return width.h;
   }
-
   static double adaptFontSize(double fontSize) {
     return fontSize.sp;
   }

@@ -19,7 +19,6 @@ class DefaultThemeData with ChangeNotifier {
   }
 
   ThemeType get currentThemeType => _currentThemeType;
-
   set currentThemeType(ThemeType type) {
     _currentThemeType = type;
     Future<SharedPreferences> _prefs = SharedPreferences.getInstance();

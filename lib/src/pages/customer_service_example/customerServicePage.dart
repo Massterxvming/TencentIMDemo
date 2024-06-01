@@ -18,7 +18,6 @@ class _CustomerServicePageState extends State<CustomerServicePage> {
   @override
   Widget build(BuildContext context) {
     final theme = Provider.of<DefaultThemeData>(context).theme;
-
     Widget customerService() {
       return CustomerServiceList(
         emptyBuilder: (_) {

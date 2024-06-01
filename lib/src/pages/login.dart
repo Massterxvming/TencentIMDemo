@@ -234,14 +234,14 @@ class _LoginFormState extends State<LoginForm> {
 
   userLogin() async {
     if (userID.trim() == '') {
-      ToastUtils.toast(TIM_t("请输入用户名"));
+      ToastUtils.toast("请输入用户名");
       return;
     }
 
     String key = IMDemoConfig.key;
     int sdkAppId = IMDemoConfig.sdkappid;
     if (key == "") {
-      ToastUtils.toast(TIM_t("请在环境变量中写入key"));
+      ToastUtils.toast("请在环境变量中写入key");
       return;
     }
     GenerateTestUserSig generateTestUserSig = GenerateTestUserSig(
@@ -330,7 +330,7 @@ class _LoginFormState extends State<LoginForm> {
                         children: [
                           Expanded(
                             child: ElevatedButton(
-                              child: Text(TIM_t("登录")),
+                              child: Text("登录"),
                               onPressed: userLogin,
                             ),
                           )

@@ -17,7 +17,6 @@ import 'newContact.dart';
 
 class Contact extends StatefulWidget {
   final ValueChanged<String>? onTapItem;
-
   const Contact({Key? key, this.onTapItem}) : super(key: key);
 
   @override
@@ -180,7 +179,7 @@ class _ContactState extends State<Contact> {
           isShowOnlineStatus: localSetting.isShowOnlineStatus,
           topList: [
             TopListItem(
-                name: TIM_t("新的联系人"),
+                name: "新的联系人",
                 id: "newContact",
                 icon: Image.asset(_getImagePathByID("newContact")),
                 onTap: () {
@@ -188,14 +187,14 @@ class _ContactState extends State<Contact> {
                 }),
             if (!isWideScreen)
               TopListItem(
-                  name: TIM_t("我的群聊"),
+                  name: "我的群聊",
                   id: "groupList",
                   icon: Image.asset(_getImagePathByID("groupList")),
                   onTap: () {
                     _topListItemTap("groupList");
                   }),
             TopListItem(
-                name: TIM_t("黑名单"),
+                name: "黑名单",
                 id: "blackList",
                 icon: Image.asset(_getImagePathByID("blackList")),
                 onTap: () {
@@ -203,7 +202,7 @@ class _ContactState extends State<Contact> {
                 }),
             if (!isWideScreen)
               TopListItem(
-                  name: TIM_t("在线客服"),
+                  name: "在线客服",
                   id: "customerService",
                   icon: Image.asset(_getImagePathByID("customerService")),
                   onTap: () {

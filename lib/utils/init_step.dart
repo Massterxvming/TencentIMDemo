@@ -24,7 +24,6 @@ class InitStep {
   static setCustomSticker(BuildContext context) async {
     // 添加自定义表情包
     List<CustomStickerPackage> customStickerPackageList = [];
-
     customStickerPackageList.addAll(Const.emojiList.map((customEmojiPackage) {
       return CustomStickerPackage(
           name: customEmojiPackage.name,

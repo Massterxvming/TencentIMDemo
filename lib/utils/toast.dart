@@ -34,7 +34,6 @@ class ToastUtils {
       child: toastItem,
     );
   }
-
   static void toastError(int code, String desc) {
     Fluttertoast.showToast(
       msg: "code:$code,desc:$desc",

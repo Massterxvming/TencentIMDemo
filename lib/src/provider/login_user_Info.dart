@@ -6,7 +6,7 @@ import 'package:flutter/widgets.dart';
 import 'package:tencent_cloud_chat_uikit/tencent_cloud_chat_uikit.dart';
 
 class LoginUserInfo with ChangeNotifier {
-  V2TimUserFullInfo _loginUserInfo = V2TimUserFullInfo();
+  V2TimUserFullInfo _loginUserInfo = V2TimUserFullInfo();//获得数据库中的信息
   final CoreServicesImpl _coreServices = TIMUIKitCore.getInstance();
   V2TimUserFullInfo get loginUserInfo {
     return _loginUserInfo;

@@ -51,7 +51,6 @@ class CancelAccount extends StatelessWidget {
             String token = prefs.getString("smsLoginToken") ?? "";
             String userID = prefs.getString("smsLoginUserID") ?? "";
             String appID = prefs.getString("sdkAppId") ?? "";
-
             Response<Map<String, dynamic>> data = await appRequest(
                 path:
                     "/base/v1/auth_users/user_delete?apaasUserId=$userID&userId=$userID&token=$token&apaasAppId=$appID",

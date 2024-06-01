@@ -2,7 +2,6 @@ import 'package:tencent_cloud_chat_uikit/tencent_cloud_chat_uikit.dart';
 
 
 enum WebUrl { personalInfo, thirdPartyInfo }
-
 class IMDemoConfig {
   // live plugin
   static String licenseKey = "";
@@ -11,10 +10,11 @@ class IMDemoConfig {
   static String livePlayUrl = '';
 
   static const int sdkappid =
-      int.fromEnvironment('SDK_APPID', defaultValue: 0);
+      int.fromEnvironment('SDK_APPID', defaultValue:
+      1600034940);
   static const String key = String.fromEnvironment('KEY',
       defaultValue:
-          "");
+          "3529a81fe40552e0bdc4d75ab1b7d6a8af303ee0e2b201a46df7e1da99b11737");
   static const String appVersion =
       String.fromEnvironment('APP_VERSION', defaultValue: "0.0.1");
   static const String projectType =
@@ -44,7 +44,6 @@ class IMDemoConfig {
   };
   // appBarTile无法做适配，必须要常量才可以
   static const double appBarTitleFontSize = 17;
-
   static const String baiduMapIOSAppKey = "";
 
   static const Map<WebUrl, String> webUrls = {
@@ -53,7 +52,6 @@ class IMDemoConfig {
     WebUrl.thirdPartyInfo:
         "https://privacy.qq.com/document/preview/dea84ac4bb88454794928b77126e9246",
   };
-
   static const List<String> customerServiceUserList = [
     'iaZ76jBked4Yfyzt9M2wUdzQnLOtv8MY',
     'iaIYgpWe2OajVLs6l0x1u5ne3tskfzZ5',
